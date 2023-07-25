@@ -7,8 +7,8 @@ async function main() {
 console.log('...seeding')
  await prisma.user.create({
     data: {
-        name: "jerry",
-        password: 'JERRRRY'
+        name: "Allen",
+        password: 'yoooALLLEN'
     }
     
 
