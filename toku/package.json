@@ -9,11 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.0.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "mongoose": "^7.4.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0",
+    "ts-node": "^10.9.1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }
