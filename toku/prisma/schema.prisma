@@ -17,3 +17,11 @@ model User {
   name String
   password String
 }
+
+model Heroes {
+  id  String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  Era String 
+  Image String 
+  Info String 
+}
