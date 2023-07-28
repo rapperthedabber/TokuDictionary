@@ -1,11 +1,15 @@
 const { PrismaClient } = require("@prisma/client");
+const superagent = require('superagent')
 const prisma = new PrismaClient()
 export default async function getUltraman(req,res){
-  const query = req.body
-    try{
+
+
+    
+  const { number }= req.query
+   try{
         const ultramanId = await prisma.heroes.findUnique({
             where:{
-                id: "64c06ed88b542e530b96371b"
+                id: number
                 
             } 
         })
