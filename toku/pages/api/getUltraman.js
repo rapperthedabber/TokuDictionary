@@ -4,12 +4,12 @@ const prisma = new PrismaClient
 
 export default async function getUltraman(req, res){
     try{
-        const ultraman = await prisma.heroes.findMany({
+        const ultraman = await prisma.ultraman.findMany({
             select:{
                 id: true,
                 name: true,
                 Era: true,
-                Info: true
+                info: true
             }
         })
         res.send(JSON.stringify(ultraman))

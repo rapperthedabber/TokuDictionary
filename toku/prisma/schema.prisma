@@ -12,16 +12,32 @@ datasource db {
 }
 
 
-model User {
-  id  String @id @default(auto()) @map("_id") @db.ObjectId
-  name String
-  password String
-}
+// model User {
+//   id  String @id @default(auto()) @map("_id") @db.ObjectId
+//   name String
+//   password String
+// }
 
-model Heroes {
+model ultraman {
   id  String @id @default(auto()) @map("_id") @db.ObjectId
   name String
   Era String 
   Image String 
-  Info String 
+  info Info[]
+
+ 
+
 }
+model Info {
+    id  String @id @default(auto()) @map("_id") @db.ObjectId 
+    Introduction String
+    Story String
+    author ultraman @relation(fields: [authorId], references: [id])
+    authorId String @db.ObjectId
+}
+
+
+
+
+
+
