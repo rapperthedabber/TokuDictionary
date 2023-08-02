@@ -11,7 +11,10 @@ export default async function getUltraman(req,res){
             where:{
                 id: number
                 
-            } 
+            }, 
+            include: {
+                info: true
+            }
         })
 res.send(JSON.stringify(ultramanId))
     }catch(error){
