@@ -7,9 +7,12 @@ export default async function Ultraman(req,res){
     
 const {ultraman } = req.query
     try{
-        const ultramanName = await primsa.heroes.findFirst({
+        const ultramanName = await primsa.ultraman.findFirst({
             where: {
                 name: ultraman
+            },
+            include:{
+                info: true
             }
         })
         res.send(JSON.stringify(ultramanName))

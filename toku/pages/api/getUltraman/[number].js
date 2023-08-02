@@ -7,7 +7,7 @@ export default async function getUltraman(req,res){
     
   const { number }= req.query
    try{
-        const ultramanId = await prisma.heroes.findUnique({
+        const ultramanId = await prisma.ultraman.findUnique({
             where:{
                 id: number
                 
