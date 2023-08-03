@@ -1,11 +1,12 @@
-import User from '../../Models/user'
+
+import user from '../../Models/User'
 import connect from '@/lib/mongodb'
 
 export default async function loginUser(req,res){
     await connect()
     const {username, password} = req.body
-    const user = await User.findOne({username,password})
-        if(!user){
+    const User = await user.findOne({username,password})
+        if(!User){
             return res.json({status: 'Not able to find user'})
         }else{
             res.redirect('/welcome/welcome')
