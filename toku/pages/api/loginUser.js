@@ -1,5 +1,5 @@
 
-import User from '../../Models/user'
+import User from '../../Models/User'
 import connect from '@/lib/mongodb'
 
 export default async function loginUser(req,res){
