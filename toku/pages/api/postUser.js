@@ -1,14 +1,14 @@
 import connect from "@/lib/mongodb";
-import User from '../../Models/user'
+import user from '../../Models/User'
 
 
 export default async function postUser(req,res){
     await connect();
 
-    const user = await User.create(req.body)
+    const User = await user.create(req.body)
    
    try{
-    if(user){
+    if(User){
         res.redirect('/welcome/welcome')
     }else{
         res.json({"code": "User failed to create"})
