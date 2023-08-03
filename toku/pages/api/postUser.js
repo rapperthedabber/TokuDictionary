@@ -1,5 +1,5 @@
 import connect from "@/lib/mongodb";
-import User from '../../Models/User'
+import User from '../../Models/user'
 
 
 export default async function postUser(req,res){

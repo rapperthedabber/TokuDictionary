@@ -1,4 +1,4 @@
-import User from '../../Models/User'
+import User from '../../Models/user'
 import connect from '@/lib/mongodb'
 
 export default async function loginUser(req,res){
