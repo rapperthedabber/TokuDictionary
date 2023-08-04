@@ -53,7 +53,7 @@ useEffect(() =>{
                 the name, the era that the Ultraman was produced, image, and more information about the Ultraman
                 such as the name of the human host and a brief summary of the series
             </h2>
-            <Image src={getAll}></Image>
+            <Image src={getAll} id="IMAGE"></Image>
             </div>
             
             
@@ -63,7 +63,7 @@ useEffect(() =>{
             users can type in the name of the Ultraman at the end of the URL to pull that specific info. For example, Ultraman Neos is 
            put at the end of the URL to retrieve all the data of Ultraman Neos
             </h2>
-            <Image src={ultramanName}></Image>
+            <Image src={ultramanName} id="IMAGE"></Image>
             </div>
             <div className="divDoc">
             <h2 id="method">/api/getEra/&#123; name of Era &#125;</h2>
@@ -71,7 +71,7 @@ useEffect(() =>{
             to get every Ultraman information produced in that era. For example, Ultraman Tiga is one of the datas pulled because Ultraman Tiga
             belongs to the Heisei era.
             </h2>
-            <Image src={Era}></Image>
+            <Image src={Era} id="IMAGE"></Image>
             </div>
                 <h1 id="About">About</h1>
                 <div className="divDoc">
