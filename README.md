@@ -41,6 +41,8 @@ Does not require users to install anything. Recommend using Insomnia or Postman 
 This application uses Next.js (frontend) and MongoDB Atlas and PRISMA (backend) in order to make the API functional. 
 
 # Documentation
+![image](https://github.com/rapperthedabber/TokuDictionary/assets/116526260/2ed5dd70-f79a-42c5-8a68-95d4fd4a7999)
+
 
 /api/getUltraman - gets all data on Ultraman from the Showa to Reiwa era. Also retrieves data on the name, image, era, and info
 /api/Ultraman/{Ultraman Name} - get Ultraman data on a specific Ultraman
