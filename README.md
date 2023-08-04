@@ -1,6 +1,7 @@
 # TokuDictionary
 # Bible-Media
-![image](https://github.com/rapperthedabber/Bible-Media/assets/116526260/d8c18d6c-1eca-4514-97ac-c68b13dcb624)
+![image](https://github.com/rapperthedabber/TokuDictionary/assets/116526260/331823a1-1192-42ed-8e46-af06fb4e296f)
+
 
 # User Story
 Introducing the Ultraman API – the ultimate gateway to a treasure trove of data on all Ultraman series, complete with summaries and captivating images! Designed to be the go-to resource for Ultraman enthusiasts, researchers, and developers, our API offers comprehensive access to the vast world of Ultraman in a user-friendly and efficient manner.
@@ -25,11 +26,7 @@ Engaging Experience: Whether you're a longtime fan or a newcomer to the Ultraman
 
 Embrace the legacy of Ultraman and embark on a thrilling adventure through time and space with the Ultraman API. From heroic tales of justice and bravery to awe-inspiring battles against giant monsters, our API brings the essence of Ultraman to your fingertips, igniting the spark of excitement that Ultraman fans hold dear. Discover the magic of Ultraman like never before with our all-encompassing and feature-rich API.
 
-# Documentation
 
-/api/getUltraman - gets all data on Ultraman from the Showa to Reiwa era. Also retrieves data on the name, image, era, and info
-/api/Ultraman/{Ultraman Name} - get Ultraman data on a specific Ultraman
-/api/getEra/{name of Era} - use can get series from either Showa, Heisei, Neo-Heisei, and Reiwa era.
 
 -[Installation](#installation)<br>
 -[Technologies](#technologies)<br>
@@ -42,6 +39,12 @@ Does not require users to install anything. Recommend using Insomnia or Postman 
 
 # Technologies
 This application uses Next.js (frontend) and MongoDB Atlas and PRISMA (backend) in order to make the API functional. 
+
+# Documentation
+
+/api/getUltraman - gets all data on Ultraman from the Showa to Reiwa era. Also retrieves data on the name, image, era, and info
+/api/Ultraman/{Ultraman Name} - get Ultraman data on a specific Ultraman
+/api/getEra/{name of Era} - use can get series from either Showa, Heisei, Neo-Heisei, and Reiwa era.
 
 # Credits
 Jerry Dong: https://github.com/rapperthedabber/
