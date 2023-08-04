@@ -43,10 +43,15 @@ This application uses Next.js (frontend) and MongoDB Atlas and PRISMA (backend) 
 # Documentation
 ![image](https://github.com/rapperthedabber/TokuDictionary/assets/116526260/2ed5dd70-f79a-42c5-8a68-95d4fd4a7999)
 
-
+<br>
 /api/getUltraman - gets all data on Ultraman from the Showa to Reiwa era. Also retrieves data on the name, image, era, and info
+</br>
+<br>
 /api/Ultraman/{Ultraman Name} - get Ultraman data on a specific Ultraman
+</br>
+<br>
 /api/getEra/{name of Era} - use can get series from either Showa, Heisei, Neo-Heisei, and Reiwa era.
+</br>
 
 # Credits
 Jerry Dong: https://github.com/rapperthedabber/
